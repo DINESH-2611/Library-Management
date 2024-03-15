@@ -13,4 +13,7 @@ public class ManageBookView {
 		System.out.println();
 	}
 
+	public void showLibraryName(String libraryName) {
+		System.out.println("Current Library Name-"+libraryName);
+	}
 }

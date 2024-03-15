@@ -39,13 +39,5 @@ public class Admin {
         this.address = address;
     }
 
-    @Override
-    public String toString() {
-        return "Admin{" +
-                "name='" + name + '\'' +
-                ", userId='" + userId + '\'' +
-                ", emailId='" + emailId + '\'' +
-                ", address=" + address +
-                '}';
-    }
+
 }

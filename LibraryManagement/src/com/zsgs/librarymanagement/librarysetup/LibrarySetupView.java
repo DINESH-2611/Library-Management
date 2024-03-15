@@ -1,6 +1,9 @@
 package com.zsgs.librarymanagement.librarysetup;
 
 import com.zsgs.librarymanagement.managebook.ManageBookView;
+import com.zsgs.librarymanagement.model.Library;
+
+import java.util.Scanner;
 
 public class LibrarySetupView {
 	  private  LibrarySetupModel librarySetupModel;
@@ -17,12 +20,18 @@ public class LibrarySetupView {
 			new ManageBookView().init();
 	    }
 	    
-	    public void showAlert() {
-	    	System.out.println("\nPrint any errors here.");
+	    public void showAlert(String alert) {
+
+			System.out.println(alert);
 	    }
 	    
 	    public void initiateSetup() {
-	    	System.out.println("\n\nGet Library Details From Here.");
+//	    	System.out.println("\n\nGet Library Details From Here.");
+			Library library=new Library();
+			Scanner scanner=new Scanner(System.in);
+			System.out.println("Enter library id");
+			int libraryId=scanner.nextInt();
+			librarySetupModel.createLibrary(library);
 	    
 	    }
 

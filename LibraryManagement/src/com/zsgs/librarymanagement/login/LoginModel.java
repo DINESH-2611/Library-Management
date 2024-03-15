@@ -1,6 +1,5 @@
 package com.zsgs.librarymanagement.login;
-
-public class LoginModel {
+class LoginModel {
 	private LoginView loginView;
 
 	LoginModel(LoginView loginView) {

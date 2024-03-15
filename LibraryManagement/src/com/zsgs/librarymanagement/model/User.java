@@ -56,15 +56,5 @@ public class User {
         this.membership = membership;
     }
 
-    @Override
-    public String toString() {
-        return "Member{" +
-                "userId=" + userId +
-                ", userName='" + userName + '\'' +
-                ", phoneNo=" + phoneNo +
-                ", emailId='" + emailId + '\'' +
-                ", address='" + address + '\'' +
-                ", membership=" + membership +
-                '}';
-    }
+
 }
